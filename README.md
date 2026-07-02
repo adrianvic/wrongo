@@ -1,6 +1,8 @@
 # Wrongo
 Wrongo is a 11ty template aiming to make webring hosting easy. The only thing you need to configure is the `preferences.json` file, then you add members to `members.json` and _voilà_, you have a custom webring!
 
+The generated output will be a static website, meaning it does not need a dedicated server to host once you build it. Each time there's a change you build it again and you get pure HTML files alongside their resources. This makes possible hosting Wrongo on places like [Neocities](https://neocities.org/), [GitHub Pages](https://docs.github.com/en/pages), [InfinityFree](https://www.infinityfree.com/), or really any other webserver possible.
+
 "What is a webring", you may ask. Webrings are groups of websites chained together by a common widget. Webrings were more common before search engines and now are usually present in indie websites, since they allow the user to find related human-made content.
 
 ## I've cloned the repo, what now?
