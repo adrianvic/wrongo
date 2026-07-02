@@ -19,13 +19,13 @@
 	</script>
 
 	<header>
-		<div>
+		<div id="headerTitle">
 			<h1>{{ preferences.ringName }}</h1>
 			<p>{{ preferences.siteDescription }}</p>
 		</div>
 		<div id="headerLinks">
 			{% for name, link in preferences.links %} 
-				<a href="{{link}}">{{name}}</a>
+				<a href="{{ link | url }}">{{name}}</a>
 			{% endfor %}
 		</div>
 	</header>
