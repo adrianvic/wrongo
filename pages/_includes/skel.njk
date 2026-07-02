@@ -3,7 +3,7 @@
 <head>
 	<title>{{ preferences.ringName }}</title>
 	{% for sheet in preferences.stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ '/static/' ~ sheet | url }}">
+	<link rel="stylesheet" type="text/css" href="{{ ('/static/' ~ sheet) | url }}">
 	{% endfor %}
 </head>
 
@@ -50,9 +50,9 @@
 			<h1>Widget</h1>
 			{% include 'widget.html' %}
 
+			{% if preferences.showWidgetSource == true %}
 			<script src="{{ '/static/widget-gen.js' | url}}" defer></script>
 
-			{% if preferences.showWidgetSource == true %}
 			<p>Widget source</p>
 			{% set widget %}{% include "widget.html" %}{% endset %}
 			<div style="display: flex;">
