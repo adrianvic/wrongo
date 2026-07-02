@@ -5,6 +5,10 @@ The generated output will be a static website, meaning it does not need a dedica
 
 "What is a webring", you may ask. Webrings are groups of websites chained together by a common widget. Webrings were more common before search engines and now are usually present in indie websites, since they allow the user to find related human-made content.
 
+<p align="center">
+<img width="290" height="133" alt="image" src="https://github.com/user-attachments/assets/4c0b6748-8fc9-49d9-9bbd-14207a331ca0" />
+</p>
+
 ## I've cloned the repo, what now?
 Start by customizing `preferences.json` to give your webring a name, then add your first members to `members.json`. Finally, edit the index page source at `index.md`, you can rename this file to end with `html` if you don't want to use markdown.
 
